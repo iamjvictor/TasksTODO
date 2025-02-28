@@ -31,6 +31,7 @@ class TaskFormActivity : AppCompatActivity(), View.OnClickListener, DatePickerDi
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        supportActionBar?.hide()
 
         // Variáveis da classe
         viewModel = ViewModelProvider(this).get(TaskFormViewModel::class.java)
@@ -44,6 +45,8 @@ class TaskFormActivity : AppCompatActivity(), View.OnClickListener, DatePickerDi
 
         loadDataFromActivity()
         observe()
+
+
 
         //Spinner
 

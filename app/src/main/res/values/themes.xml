@@ -7,11 +7,15 @@
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
-        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorSecondaryVariant">#005B5A</item>
         <item name="colorOnSecondary">@color/black</item>
+
+
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <!-- Define o background para todas as atividades -->
+        <item name="android:windowBackground">@drawable/shape_background</item>
     </style>
 
     <style name="Theme.Tasks.NoActionBar">
@@ -22,4 +26,23 @@
     <style name="Theme.Tasks.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.Tasks.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!--Botão-->
+    <style name="DefaultButton">
+        <item name="android:backgroundTint">@color/teal_700</item>
+        <item name="android:paddingStart">32dp</item>
+        <item name="android:paddingEnd">32dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+
+    </style>
+    <style name="EditTextWhite">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:drawableTint">@color/white</item>
+        <item name="android:drawablePadding">8dp</item>
+
+
+    </style>
 </resources>

@@ -4,31 +4,41 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
+
     android:id="@+id/row_task">
 
     <ImageView
         android:id="@+id/image_task"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
         android:layout_gravity="center"
         android:src="@drawable/ic_todo"
+        app:tint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/text_description"
+        android:textColor="@android:color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
         android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
         android:text="@string/descricao"
         app:layout_constraintStart_toEndOf="@id/image_task"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.3" />
 
     <TextView
         android:id="@+id/text_priority"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="@string/prioridade"
@@ -39,21 +49,22 @@
     <TextView
         android:id="@+id/text_due_date"
         android:layout_width="wrap_content"
+        android:textColor="@android:color/white"
         android:layout_height="wrap_content"
         android:text="@string/data_limite"
+        android:textSize="16sp"
         android:textStyle="bold"
+        android:layout_marginEnd="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <View
         android:id="@+id/view"
-        android:layout_width="0dp"
-        android:layout_height="2dp"
-        android:layout_marginTop="8dp"
-        android:background="#ececec"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_marginTop="32dp"
+        android:layout_height="1dp"
+        android:background="@color/white"
         app:layout_constraintTop_toBottomOf="@id/text_priority" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
