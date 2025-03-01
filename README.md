@@ -18,11 +18,6 @@ O **TasksTODO** é um aplicativo intuitivo e funcional para gerenciamento de tar
 - **Linguagem de Programação**: Kotlin
 - **Arquitetura**: MVVM (Model-View-ViewModel)
 - **Interface do Usuário**: Android Jetpack Components
-    - ConstraintLayout
-    - RecyclerView
-    - LiveData
-    - ViewModel
-    - Navigation Component
 - **Bibliotecas**:
     - Retrofit para consumo de APIs.
     - BiometricPrompt para autenticação biométrica.
@@ -64,9 +59,5 @@ O **TasksTODO** é um aplicativo intuitivo e funcional para gerenciamento de tar
 | ![Image 4](appMedia/RegisterAct.png) | ![Image 5](appMedia/TaskFilters.png) | ![Image 6](appMedia/TaskRegister.png) |
 
 
-
----
-
 ## Licença
 Este projeto está sob a licença MIT. Para mais detalhes, leia o arquivo `LICENSE` no repositório.
-```
